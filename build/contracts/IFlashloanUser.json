@@ -1,0 +1,371 @@
+{
+  "contractName": "IFlashloanUser",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "flashloanCallback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"flashloanCallback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IFlashloanUser.sol\":\"IFlashloanUser\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IFlashloanUser.sol\":{\"keccak256\":\"0x3ff04990673fac386457c1fcf6e12c65522cfcc6b5c94e7f156482410358b644\",\"urls\":[\"bzz-raw://e408da618cb9c3d8830fff25003a2a19dabe2ce4761bc1129b2010aabe1ed1c7\",\"dweb:/ipfs/QmPCp7Zh3tLp5vwLDP7Y6Dp6aqbhwJJ8E3Tv3wB9yw73DQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.7.3;\n\ninterface IFlashloanUser {\n  function flashloanCallback(uint amount, address token, bytes memory data) external;\n}",
+  "sourcePath": "/Users/shawnlee/flashloans/contracts/IFlashloanUser.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/IFlashloanUser.sol",
+    "exportedSymbols": {
+      "IFlashloanUser": [
+        306
+      ]
+    },
+    "id": 307,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 296,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 306,
+        "linearizedBaseContracts": [
+          306
+        ],
+        "name": "IFlashloanUser",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a6fc41ab",
+            "id": 305,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "flashloanCallback",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 298,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "81:11:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 297,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "81:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 300,
+                  "mutability": "mutable",
+                  "name": "token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "94:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 299,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "94:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 302,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 305,
+                  "src": "109:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 301,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "109:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "80:47:4"
+            },
+            "returnParameters": {
+              "id": 304,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "136:0:4"
+            },
+            "scope": 306,
+            "src": "54:83:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 307,
+        "src": "25:114:4"
+      }
+    ],
+    "src": "0:139:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/IFlashloanUser.sol",
+      "exportedSymbols": {
+        "IFlashloanUser": [
+          306
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 296,
+        "name": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            306
+          ],
+          "name": "IFlashloanUser",
+          "scope": 307
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "a6fc41ab",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "flashloanCallback",
+              "scope": 306,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "amount",
+                      "scope": 305,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 297,
+                        "name": "ElementaryTypeName",
+                        "src": "81:4:4"
+                      }
+                    ],
+                    "id": 298,
+                    "name": "VariableDeclaration",
+                    "src": "81:11:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "token",
+                      "scope": 305,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 299,
+                        "name": "ElementaryTypeName",
+                        "src": "94:7:4"
+                      }
+                    ],
+                    "id": 300,
+                    "name": "VariableDeclaration",
+                    "src": "94:13:4"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "scope": 305,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 301,
+                        "name": "ElementaryTypeName",
+                        "src": "109:5:4"
+                      }
+                    ],
+                    "id": 302,
+                    "name": "VariableDeclaration",
+                    "src": "109:17:4"
+                  }
+                ],
+                "id": 303,
+                "name": "ParameterList",
+                "src": "80:47:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 304,
+                "name": "ParameterList",
+                "src": "136:0:4"
+              }
+            ],
+            "id": 305,
+            "name": "FunctionDefinition",
+            "src": "54:83:4"
+          }
+        ],
+        "id": 306,
+        "name": "ContractDefinition",
+        "src": "25:114:4"
+      }
+    ],
+    "id": 307,
+    "name": "SourceUnit",
+    "src": "0:139:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-09-13T05:09:52.530Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
